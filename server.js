@@ -104,4 +104,5 @@ app.get("/signout", (req, res) => {
   req.session.destroy(() => res.redirect("/"));
 });
 
-app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
+module.exports = app;
+
